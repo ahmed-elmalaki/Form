@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" >
+        <meta name="desciption" content="Form">
+        <title> Basic form </title>
+        <link rel="stylesheet" href="foldername/style.css" type="">
+        <!--For CSS Style Sheet-->
+        <!--rel: the relation between the (2) files -->
+        <!--href: the source of Style Sheet-->
+        <script></script>
+        <!-- For JavaScript -->
+        <style>
+            body {background: whitesmoke ;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+            fieldset 
+            {
+                background: white;
+                border: 1px solid black;
+                padding: 20px;
+                margin-bottom: 20px;
+                width: 500px;
+                margin: 20px auto;
+            }
+            legend 
+            {
+                background: white ;
+                border: 1px solid black;
+                padding: 10px ;
+
+            }
+            label{margin-bottom: 10px;display: block;}
+            input{margin-bottom: 10px;}
+            input[type="text"],
+            input[type="password"],
+            {
+                padding: 8px;
+                width: 300px;
+                display: block;
+            }
+            textarea{margin-bottom: 10px;
+                     font-family: 'Trebuchet MS', sans-serif;
+                     font-style: italic;
+                     font-size: smaller;
+                     display: block;}
+            
+            .footer  {
+                background: black;
+                color: white;
+                text-align: center;
+                padding: 10px;
+                margin: -10px;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        </style>
+    </head>
+    <body>
+        <form name="register" action="" method="post">
+            <fieldset>
+                <legend>Personal information</legend>
+                <label>User name</label>
+                <input type="text" name="User name" value="" placeholder="Your name" maxlength="30">
+                <label>Password</label>
+                <input type="password" name="Password" value="" placeholder="Your passowrd" maxlength="30">
+                <label>E-mail</label>
+                <input type="email" name="E-mail">
+                <label>Gendr</label>
+                <select name="Gender" >
+                    <option value="Male">Male</option>
+                    <option value="Female" >Female</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Favourites</legend>
+                <label>3D Software</label>
+                <input type="radio" name="editor1"> Maya <br>
+                <input type="radio" name="editor2"> 3D Max <br>
+                <input type="radio" name="editor3"> Blender <br>
+                <input type="radio" name="editor4"> Cinema 4D
+                <hr>
+                <label>Editors</label>
+                <select name="Editors">
+                   <optgroup label="Photo editing" >
+                     <option value="1" selected>Adobe Photoshop</option>
+                     <option value="2">Adobe Illustrator</option>
+                     <option value="3">Adobe Indesign</option>
+                   </optgroup>
+                   <optgroup label="Vedio editing">
+                     <option value="1">Adope Premier</option> 
+                     <option value="2">Camatasia</option>
+                     <option value="3" disabled>Adobe After effects</option>
+                   </optgroup>    
+
+                </select>
+                <hr>
+                <label>Operating system</label>
+                <input type="radio" name="PC"> Windows  <br>
+                <input type="radio" name="PC"> Mac OSX <br>
+                <input type="radio" name="PC"> Linux 
+            </fieldset>
+            <fieldset>
+                <legend>CV</legend>
+                <label>Upload your CV</label>
+                <input type="file">
+                <!--you can't edit for security reasons -->
+            </fieldset>
+            <fieldset>
+                <legend>Message</legend>
+                <textarea readonly>your message here </textarea>
+                <input type="submit" value="Send">
+            </fieldset>
+            <input type="hidden" value="test">
+        </form>
+        <div class="footer" >
+            Copywrite &copy; 2022 All Rights Reserved To AHMED EL-MALAKI
+        </div>
+    </body>
+</html>
